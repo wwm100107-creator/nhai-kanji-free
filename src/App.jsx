@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Navbar from './components/Navbar';
 import KanjiHomeView from './views/KanjiHomeView';
+import RoadmapView from './views/RoadmapView';
 import TangoView from './views/TangoView';
 import BunpoView from './views/BunpoView';
 import JlptView from './views/JlptView';
@@ -21,6 +22,7 @@ export default function App() {
         {activeTab === 'kanji' && (
           <KanjiHomeView onNavigateRadicals={() => setActiveTab('radicals')} />
         )}
+        {activeTab === 'roadmap' && <RoadmapView />}
         {activeTab === 'tango' && <TangoView />}
         {activeTab === 'bunpo' && <BunpoView />}
         {activeTab === 'jlpt' && <JlptView />}
