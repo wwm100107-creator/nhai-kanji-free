@@ -1,9 +1,10 @@
 import React from 'react';
-import { Sparkles, BookOpen, Layers, Activity, Award, Heart, Compass } from 'lucide-react';
+import { Sparkles, BookOpen, Layers, Activity, Award, Heart, Compass, Flame } from 'lucide-react';
 
 export default function Navbar({ activeTab, setActiveTab }) {
   const navItems = [
     { id: 'kanji', label: 'Nhai Kanji', sub: 'Chiết tự & Sơ đồ', icon: Sparkles },
+    { id: 'review', label: 'Ôn hàng ngày', sub: 'SRS & Streak', icon: Flame },
     { id: 'roadmap', label: 'Lộ trình', sub: '0 → N1', icon: Compass },
     { id: 'tango', label: 'Nhai Tango', sub: 'Từ vựng N5→N1', icon: BookOpen },
     { id: 'bunpo', label: 'Nhai Bunpo', sub: 'Ngữ pháp & Phân tích', icon: Layers },
